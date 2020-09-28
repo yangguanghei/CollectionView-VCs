@@ -22,7 +22,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view addSubview:self.collectionView];
+    
+    self.view.backgroundColor = [UIColor greenColor];
+    
+//    [self.view addSubview:self.collectionView];
+
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    // 在viewDidAppear之后可修改根视图的位置和大小
+    self.view.frame = CGRectMake(100, 100, 200, 200);
+}
+
+- (void)testCode{
+    
+    // 子视图上添加自控制器的根视图并设置根视图的位置和大小
+    UIView * redView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    redView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:redView];
+    
+    UIViewController * vc = [UIViewController new];
+    [self addChildViewController:vc];
+    [redView addSubview:vc.view];
+    vc.view.backgroundColor = [UIColor yellowColor];
+    vc.view.frame = redView.bounds;
+    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
