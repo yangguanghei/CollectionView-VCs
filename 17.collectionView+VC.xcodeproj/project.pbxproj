@@ -16,6 +16,7 @@
 		18B752DE25209D09004E1050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B752DD25209D09004E1050 /* main.m */; };
 		18B752E825209D09004E1050 /* _7_collectionView_VCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B752E725209D09004E1050 /* _7_collectionView_VCTests.m */; };
 		18B752F325209D09004E1050 /* _7_collectionView_VCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B752F225209D09004E1050 /* _7_collectionView_VCUITests.m */; };
+		18B7530225209EE9004E1050 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7530125209EE9004E1050 /* CustomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		18B752EE25209D09004E1050 /* 17.collectionView+VCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "17.collectionView+VCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B752F225209D09004E1050 /* _7_collectionView_VCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _7_collectionView_VCUITests.m; sourceTree = "<group>"; };
 		18B752F425209D09004E1050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B7530025209EE9004E1050 /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		18B7530125209EE9004E1050 /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				18B752CF25209D05004E1050 /* SceneDelegate.m */,
 				18B752D125209D05004E1050 /* ViewController.h */,
 				18B752D225209D05004E1050 /* ViewController.m */,
+				18B7530025209EE9004E1050 /* CustomViewController.h */,
+				18B7530125209EE9004E1050 /* CustomViewController.m */,
 				18B752D425209D05004E1050 /* Main.storyboard */,
 				18B752D725209D09004E1050 /* Assets.xcassets */,
 				18B752D925209D09004E1050 /* LaunchScreen.storyboard */,
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B752D325209D05004E1050 /* ViewController.m in Sources */,
+				18B7530225209EE9004E1050 /* CustomViewController.m in Sources */,
 				18B752CD25209D05004E1050 /* AppDelegate.m in Sources */,
 				18B752DE25209D09004E1050 /* main.m in Sources */,
 				18B752D025209D05004E1050 /* SceneDelegate.m in Sources */,
@@ -442,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4686HA3AU;
 				INFOPLIST_FILE = "17.collectionView+VC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4686HA3AU;
 				INFOPLIST_FILE = "17.collectionView+VC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
